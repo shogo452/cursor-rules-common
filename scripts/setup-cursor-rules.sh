@@ -26,7 +26,6 @@ fi
 # 2. .cursorディレクトリの作成
 echo "📁 .cursorディレクトリを作成中..."
 mkdir -p .cursor
-mkdir -p .cursor/local-rules
 
 # 3. 既存のrulesディレクトリ/リンクを削除
 if [ -e "$RULES_TARGET_PATH" ]; then
