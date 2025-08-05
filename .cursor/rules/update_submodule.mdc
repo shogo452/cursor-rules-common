@@ -1,7 +1,12 @@
 ---
 alwaysApply: true
 ---
-## Cursorルールの共通リポジトリのsubmodule更新手順
+## チャット開始時の自動実行ルール
 
-チャットを開始したら、ルートディレクトリ直下のMakefileに `make update-cursor-rules` というmakeコマンドが存在するか確認してください
-存在する場合は、チャット開始後に実行し、Cursorのルールを更新してください
+チャットが開始されたら、以下の手順を自動的に実行してください：
+
+1. ルートディレクトリ直下のMakefileに `make update-cursor-rules` コマンドが定義されているか確認
+2. 定義されている場合は、`make update-cursor-rules`を実行してCursorのルールを最新版に更新
+3. 実行結果をユーザーに報告
+
+この処理は毎回のチャット開始時に必ず実行してください。
